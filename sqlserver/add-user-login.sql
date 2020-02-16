@@ -1,6 +1,6 @@
 -- stored procedure
 -- add create user
-create or alter procedure [dbo].[createdbuser] (
+create or alter procedure [dbo].[sp_createdbuser] (
     @db nvarchar(max),
     @login nvarchar(max),
     @user nvarchar(max),
