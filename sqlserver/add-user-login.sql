@@ -1,6 +1,6 @@
 -- stored procedure
 -- add create user
-create procedure #createdbuser (
+create or alter procedure [dbo].[createdbuser] (
     @db nvarchar(max),
     @login nvarchar(max),
     @user nvarchar(max),
@@ -28,4 +28,4 @@ end
 go
 
 -- usage
--- exec #createdbuser 'DatabaseName', 'test-login', 'test-user-name', 'test-pass', false, true, true
+-- exec createdbuser 'DatabaseName', 'test-login', 'test-user-name', 'test-pass', false, true, true
