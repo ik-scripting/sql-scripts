@@ -29,3 +29,8 @@ go
 
 -- usage
 -- exec createdbuser 'DatabaseName', 'test-login', 'test-user-name', 'test-pass', false, true, true
+drop procedure sp_createdbuser
+
+/*
+drop login testlogin
+*/
